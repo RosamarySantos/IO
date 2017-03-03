@@ -1,0 +1,3 @@
+fichero 5
+con caracter especiales
+ñññ óóü
