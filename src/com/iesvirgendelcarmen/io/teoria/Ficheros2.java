@@ -5,7 +5,7 @@ import java.io.FilenameFilter;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Fichero2 {
+public class Ficheros2 {
 
 	public static void main(String[] args) {
 		//solicitamos mediante Scanner la ruta del directorio
