@@ -1,5 +1,10 @@
 package com.iesvirgendelcarmen.io.teoria;
-
+/*Programa que lee un archivo byte a bye
+ * y  muestrea en consola el valor del los bytes
+ * leidos en decimal, hexadecimal y caracter
+ * Usamos excepciones con bloques try-catch-finally
+ * Este último para cerrar el flujo del FileInputStream
+ */
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
