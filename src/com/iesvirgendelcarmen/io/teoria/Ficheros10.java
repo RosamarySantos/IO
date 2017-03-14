@@ -44,11 +44,20 @@ public class Ficheros10 {
  			for (int i = 0; i < 10; i ++){
  				//generamos aleatorio del 1 al 10
  				int numeroAleatorio = random.nextInt(10) + 1; 
- 				System.out.println(numeroAleatorio);
+ 				System.out.print(numeroAleatorio +"  ");
  				inOut.writeInt(numeroAleatorio);
  			}
- 			System.out.println("Tamaño del fichero: " +
+ 			System.out.println("\nTamaño del fichero: " +
 					inOut.length() + " bytes");
+ 			//vamos a leer los número enteros
+ 			//Ahora el puntero está al final del fichero
+ 			inOut.seek(11); //lo colamos al final de los chars
+ 			for (int i = 0; i < 10; i++){
+ 				int numero = inOut.readInt();
+	 			System.out.printf("Número leido: %d%n", numero);
+	 			
+ 			}
+ 			
 		} catch (FileNotFoundException e) {
 			System.out.println("Fichero no encontrado");
 		} catch (IOException e1) {
