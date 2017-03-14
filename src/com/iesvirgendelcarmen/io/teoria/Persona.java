@@ -6,6 +6,7 @@ import java.io.Serializable;
 //como la clase genera objetos sería Objetc[Input/Output]Stream
 //para que se pueda hacer dicha claser debe implementar una interfaz
 //llamada Serializable
+@SuppressWarnings("serial")
 public class Persona implements Serializable{
 	//atributos
 	private String nombreCompleto; 
