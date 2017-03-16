@@ -1,0 +1,2 @@
+Línea uno con acentos àáÁ
+Otra línea con eñes

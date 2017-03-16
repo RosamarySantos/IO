@@ -1,6 +1,10 @@
 package com.iesvirgendelcarmen.io.teoria;
 
+import java.io.BufferedOutputStream;
 import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.io.PrintWriter;
 
 /* ejemplo sencillo de uso del printwriter
@@ -18,7 +22,8 @@ public class Ficheros13 {
 		double[] altura   = {1.55, 1.78, 1.88, 2.00};
 		double[] peso     = {56.21, 71.8, 85,3, 80};
 		//declaramos un printwriter
-		try (PrintWriter out = new PrintWriter("ficherosSalida/printwriter1.txt");
+		try (PrintWriter out = new PrintWriter(
+			"ficherosSalida/printwriter1.txt");
 ) 		{
 			out.printf("%9s%12s%8s%7s%n",
 					"NOMBRE", "EDAD", "ALTURA", "PESO");
@@ -29,6 +34,9 @@ public class Ficheros13 {
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+		} catch (IOException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
 		}
 		System.out.printf("%9s%12s%8s%7s%n",
 					"NOMBRE", "EDAD", "ALTURA", "PESO");
