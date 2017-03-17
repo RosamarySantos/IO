@@ -1,0 +1,5 @@
+juan pedro garcía garcía, 25, true
+luisa medina medina, 23, false
+sabino pérez pérez, 89, true
+federico lópez lópez, 45, true
+macarena benitez benitez, 56, false
