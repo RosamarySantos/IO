@@ -55,10 +55,12 @@ public class Ejercicio1 {
 					new FileWriter(
 							"ficherosSalida/numeros.txt"));)
 		{
+			String cadenaSalida = "";
 			for (int numero : arrayNumeros){
-				out.write("" + numero);
-				out.flush();
+				cadenaSalida += numero + "-";
 			}
+			out.write(cadenaSalida.substring(0, cadenaSalida.length() -1));
+			out.flush();
 		} catch (IOException e) {
 			System.out.println("Problemas I/O");
 		}
