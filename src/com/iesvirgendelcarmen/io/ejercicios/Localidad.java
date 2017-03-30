@@ -1,6 +1,9 @@
 package com.iesvirgendelcarmen.io.ejercicios;
 
-public class Localidad {
+import java.io.Serializable;
+
+@SuppressWarnings("serial")
+public class Localidad implements Serializable {
 //atributos: id,latitude,longitude,elevation,name,url,year
 	private String idLocalidad;
 	private double latitudLocalidad;
@@ -36,7 +39,8 @@ public class Localidad {
 	public String toString() {
 		return "Localidad [idLocalidad=" + idLocalidad + ", latitudLocalidad=" + latitudLocalidad
 				+ ", longitudLocalidad=" + longitudLocalidad + ", altitudLocalidad=" + altitudLocalidad
-				+ ", nombreLocalidad=" + nombreLocalidad + ", urlLocalidad=" + urlLocalidad + ", anno=" + anno + "]";
+				+ ", nombreLocalidad=" + nombreLocalidad + ", urlLocalidad=" + urlLocalidad +
+				", anno=" + anno + "]\n\n";
 	}
 	
 	

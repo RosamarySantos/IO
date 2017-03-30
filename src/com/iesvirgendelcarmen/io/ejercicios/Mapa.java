@@ -1,9 +1,16 @@
 package com.iesvirgendelcarmen.io.ejercicios;
 
+import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.List;
 
-public class Mapa {
-	private List<Localidad> listaLocalidades;
+public class Mapa implements Serializable {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	private List<Localidad> listaLocalidades = 
+			new ArrayList<Localidad>();
 
 	public List<Localidad> getListaLocalidades() {
 		return listaLocalidades;
